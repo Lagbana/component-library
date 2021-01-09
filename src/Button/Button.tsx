@@ -2,8 +2,9 @@
 import React from "react";
 
 import "./Button.scss";
+import { ButtonProps} from './Button.types'
 
-const Button: React.FC = () => (
+const Button: React.FC<ButtonProps> = () => (
   <button
     style={{
       background: "#0275d8",
@@ -11,8 +12,7 @@ const Button: React.FC = () => (
       borderRadius: "10%",
       border: "none",
       color: "#fff",
-    }}
-  >
+    }}>
     Button
   </button>
 );
