@@ -7,7 +7,7 @@
     "build"
   ],
   "types": "build/index.d.ts",
-  "description": "A skeleton to create your own React component library using Rollup, TypeScript, Sass and Storybook",
+  "description": "A React component library built using Rollup, TypeScript, Styled-Components, and Storybook",
   "scripts": {
     "build": "rollup -c",
     "test": "jest",
@@ -33,9 +33,9 @@
   "author": "Dustin Irving && Larry Agbana",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HarveyD/react-component-library/issues"
+    "url": "https://github.com/Lagbana/component-library/issues"
   },
-  "homepage": "https://github.com/HarveyD/react-component-library#readme",
+  "homepage": "https://github.com/Lagbana/component-library/blob/main/README.md",
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
