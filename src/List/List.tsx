@@ -7,7 +7,7 @@ export const List = styled.ul<ListProps>`
   background-color: ${({ backgroundColor }) => backgroundColor};
   color: ${({ color }) => color};
   display: flex;
-  flex-direction: ${({ flexDirection }) => flexDirection || "columnn"};
+  flex-direction: ${({ flexDirection }) => flexDirection };
   justify-content: ${({ justifyContent }) => justifyContent || "flex-start"};
   list-style: none;
   width: ${({ width }) => width || `100%`};
