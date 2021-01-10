@@ -1,5 +1,5 @@
 {
-  "name": "component-library",
+  "name": "component-library-ld",
   "version": "1.0.0",
   "main": "build/index.js",
   "module": "build/index.esm.js",
