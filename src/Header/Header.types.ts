@@ -1,5 +1,5 @@
 export interface HeaderProps {
-    size?: 'big' | 'medium' | 'large';
+    size?: 'small' | 'medium' | 'large';
     backgroundColor?: 'string';
     textColor?: 'string';
 }

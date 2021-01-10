@@ -10,7 +10,7 @@ const Header = styled.div<HeaderProps>`
     padding: ${({ size }) => {
       switch (size) {
         case "large":
-          return "1em 0.5em";
+         return "1em 0.5em";
         case "small":
           return "0.5em 0.25em";
         default:
