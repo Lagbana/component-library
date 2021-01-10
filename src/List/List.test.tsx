@@ -2,7 +2,7 @@
 import React from "react";
 import { render } from "@testing-library/react";
 
-import List from "./List";
+import { List } from "./List";
 import { ListProps } from "./List.types";
 
 describe("Test Component", () => {
