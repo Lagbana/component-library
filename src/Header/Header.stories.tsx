@@ -5,18 +5,20 @@ export default {
   title: "Header",
 };
 
-export const PrimaryHeader = () => (
-  <Header size='small' backgroundColor="blue" textColor="#fff">
-    Header
-  </Header>
-);
+export const PrimaryHeader = () => {
+  return (
+    <Header size="small" backgroundColor="blue" textColor="#fff">
+      Header
+    </Header>
+  );
+};
 export const SecondaryHeader = () => (
-  <Header size='medium' backgroundColor="blue" textColor="#fff">
+  <Header size="medium" backgroundColor="blue" textColor="#fff">
     Header
   </Header>
 );
 export const TertiaryHeader = () => (
-  <Header size='large' backgroundColor="blue" textColor="#fff">
+  <Header size="large" backgroundColor="blue" textColor="#fff">
     Header
   </Header>
 );
