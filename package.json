@@ -8,6 +8,9 @@
   ],
   "types": "build/index.d.ts",
   "description": "A React component library built using Rollup, TypeScript, Styled-Components, and Storybook",
+  "publishConfig": {
+    "registry":"git://github.com/Lagbana/component-library"
+  },
   "scripts": {
     "build": "rollup -c",
     "test": "jest",
