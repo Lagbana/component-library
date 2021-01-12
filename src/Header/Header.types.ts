@@ -1,5 +1,11 @@
+import { CSSProperties } from 'react'
+
 export interface HeaderProps {
-    size?: 'small' | 'medium' | 'large';
-    backgroundColor?: string;
-    textColor?: string;
+  backgroundColor?: CSSProperties["backgroundColor"];
+  fontFamily?: CSSProperties["fontFamily"];
+  fontSize?: CSSProperties["fontSize"];
+  fontWeight?: CSSProperties["fontWeight"];
+  justifyContent?: CSSProperties["justifyContent"];
+  padXY?: "small" | "medium" | "large" | "none";
+  textColor?: CSSProperties["color"];
 }
