@@ -39,7 +39,7 @@ const GridItem = styled.div<GridItemProps>`
 `;
 
 const defaultExport: StyledComponent<"div", any, GridProps, never> & {
-  Item: StyledComponent<"div", any, GridItemProps, never>;
-} = Object.assign(Grid, { Item: GridItem });
+  GridItem: StyledComponent<"div", any, GridItemProps, never>;
+} = Object.assign(Grid, { GridItem: GridItem });
 
 export default defaultExport;
