@@ -3,14 +3,12 @@ import { FlexProps, FlexItemProps } from "./Flex.types";
 
 const Flex = styled.div<FlexProps>`
   align-content: ${({ alignContent }) => alignContent || "normal"};
-  align-items: ${({ alignItems }) => alignItems || "flex-start"};
+  align-items: ${({ alignItems }) => alignItems || "stretch"};
   align-self: ${({ alignSelf }) => alignSelf || "auto"};
   background-color: ${({ background }) => background};
   color: ${({ color }) => color};
   display: flex;
-  flex-direction: ${({ flexDirection }) => flexDirection || "row"};
   flex-flow: ${({ flexFlow }) => flexFlow || "row nowrap"};
-  flex-wrap: ${({ flexWrap }) => flexWrap || "inherit"};
   font-family: ${({ fontFamily }) => fontFamily};
   font-size: ${({ fontSize }) => fontSize};
   font-weight: ${({ fontWeight }) => fontWeight};
@@ -24,18 +22,16 @@ const Flex = styled.div<FlexProps>`
 Flex.displayName = "Flex";
 
 const FlexItem = styled.div<FlexItemProps>`
-  align-self: ${({ alignSelf }) => alignSelf || "flex-start"};
+  align-self: ${({ alignSelf }) => alignSelf || "auto"};
   font-size: ${({ fontSize }) => fontSize};
   font-family: ${({ fontFamily }) => fontFamily};
   font-weight: ${({ fontWeight }) => fontWeight};
-  flex-basis: ${({ flexBasis }) => flexBasis || "auto"};
-  flex-grow: ${({ flexGrow }) => flexGrow || 0};
-  flex-shrink: ${({ flexShrink }) => flexShrink || 1};
+  flex: ${({ flex }) => flex || "0 1 auto"};
   order: ${({ order }) => order || 0};
 `;
 
 const defaultExport: StyledComponent<"div", any, FlexProps, never> & {
-  FlexItem: StyledComponent<"div", any, FlexItemProps, never>;
-} = Object.assign(Flex, { FlexItem: FlexItem });
+  Item: StyledComponent<"div", any, FlexItemProps, never>;
+} = Object.assign(Flex, { Item: FlexItem });
 
 export default defaultExport;

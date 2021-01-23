@@ -25,6 +25,7 @@ export interface FlexItemProps {
   flexBasis?: CSSProperties["flexBasis"];
   flexGrow?: CSSProperties["flexGrow"];
   flexShrink?: CSSProperties["flexShrink"];
+  flex?:CSSProperties["flex"];
   fontFamily?: CSSProperties["fontFamily"];
   fontSize?: CSSProperties["fontSize"];
   fontWeight?: CSSProperties["fontWeight"];
