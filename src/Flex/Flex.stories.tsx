@@ -59,9 +59,9 @@ export const FlexWrap = () => {
   const boxes = ["Box 1", "Box 2", "Box 3", "Box 4", "Box 5", "Box 6"];
 
   return (
-    <Flex flexFlow="row wrap">
+    <Flex flexWrap="wrap">
       {boxes.map((box) => (
-        <Flex.Item flex="0 1 300px" style={styles.box}>
+        <Flex.Item flexBasis="300px" style={styles.box}>
           <h3 style={styles.header}>{box}</h3>
           {text}
         </Flex.Item>
@@ -170,7 +170,7 @@ export const FlexDirectionColumns = () => {
   ];
 
   return (
-    <Flex flexFlow="column nowrap">
+    <Flex flexDirection="column">
       {boxes.map(({ title, text }) => (
         <Flex.Item flex={1} style={styles.box}>
           <h3 style={styles.header}>{title}</h3>
@@ -202,7 +202,7 @@ export const JustifyContentCenter = () => {
   return (
     <Flex justifyContent="center">
       {boxes.map(({ title }) => (
-        <Flex.Item flex="0 1 20%" style={styles.box}>
+        <Flex.Item flexBasis="20%" style={styles.box}>
           <h3 style={styles.header}>{title}</h3>
           {text}
         </Flex.Item>
@@ -217,7 +217,7 @@ export const JustifyContentSpaceBetween = () => {
   return (
     <Flex justifyContent="space-between">
       {boxes.map(({ title }) => (
-        <Flex.Item flex="0 1 20%" style={styles.box}>
+        <Flex.Item flexBasis="20%" style={styles.box}>
           <h3 style={styles.header}>{title}</h3>
           {text}
         </Flex.Item>
@@ -232,7 +232,7 @@ export const JustifyContentSpaceAround = () => {
   return (
     <Flex justifyContent="space-around">
       {boxes.map(({ title }) => (
-        <Flex.Item flex="0 1 20%" style={styles.box}>
+        <Flex.Item flexBasis="20%" style={styles.box}>
           <h3 style={styles.header}>{title}</h3>
           {text}
         </Flex.Item>
@@ -247,7 +247,7 @@ export const JustifyContentSpaceEvenly = () => {
   return (
     <Flex justifyContent="space-evenly">
       {boxes.map(({ title }) => (
-        <Flex.Item flex="0 1 20%" style={styles.box}>
+        <Flex.Item flexBasis="20%" style={styles.box}>
           <h3 style={styles.header}>{title}</h3>
           {text}
         </Flex.Item>
