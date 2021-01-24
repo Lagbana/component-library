@@ -5,10 +5,11 @@ const Flex = styled.div<FlexProps>`
   align-content: ${({ alignContent }) => alignContent || "normal"};
   align-items: ${({ alignItems }) => alignItems || "stretch"};
   align-self: ${({ alignSelf }) => alignSelf || "auto"};
-  background-color: ${({ background }) => background};
+  background: ${({ background }) => background};
   color: ${({ color }) => color};
   display: flex;
-  flex-flow: ${({ flexFlow }) => flexFlow || "row nowrap"};
+  flex-flow: ${({ flexFlow, flexWrap, flexDirection }) =>
+    flexFlow ? flexFlow : `${flexDirection || "row"} ${flexWrap || "nowrap"}`};
   font-family: ${({ fontFamily }) => fontFamily};
   font-size: ${({ fontSize }) => fontSize};
   font-weight: ${({ fontWeight }) => fontWeight};
@@ -26,7 +27,8 @@ const FlexItem = styled.div<FlexItemProps>`
   font-size: ${({ fontSize }) => fontSize};
   font-family: ${({ fontFamily }) => fontFamily};
   font-weight: ${({ fontWeight }) => fontWeight};
-  flex: ${({ flex }) => flex || "0 1 auto"};
+  flex: ${({ flex, flexGrow, flexShrink, flexBasis }) =>
+    flex ? flex : `${flexGrow || 0} ${flexShrink || 1} ${flexBasis || "auto"}`};
   order: ${({ order }) => order || 0};
 `;
 
